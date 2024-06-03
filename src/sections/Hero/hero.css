@@ -1,0 +1,72 @@
+.heroImg{
+    height: 400px;
+    width: 400px;
+    border-radius: 40%;
+    object-fit: cover; 
+}
+.container{
+    margin-top: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    height: 100dvh;
+    min-height: 500px;
+    span{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        a{
+            margin: 0;
+            img{
+                width: 50px;
+
+            }
+        }
+    }
+    a{
+        width: fit-content;
+        align-self: center;
+    }
+}
+.containerDiv{
+position: relative;
+}
+.colorMode{
+    position: absolute;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.description{
+    max-width: 26ch;
+    align-self: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  @media (width <= 800px) {
+      .container {
+          
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        .heroImg {
+          max-width: 300px;
+          width: 300px;
+        }
+      }
+    }
+    
+    @media (width >= 1400px) {
+      .container {
+        .heroImg {
+          max-width: 400px;
+          width: 400px;
+        }
+      }
+    }

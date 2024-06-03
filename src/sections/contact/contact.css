@@ -1,0 +1,62 @@
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.conTitle{
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+textarea, input:not([type='submit']){
+    height: 50px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: #888 1px solid;
+}
+textarea{
+    padding-top: 16px;
+    height: 300px;
+    resize: none;
+
+}
+textarea, input{
+    border: #888 1px solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    justify-self: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+::placeholder{
+    color: var(--form-text-color);
+}
+input[type='submit']{
+    margin: auto;
+        background-color: var(--btn-color);
+        color: var(--btn-text-color);
+        border: none;
+        border-radius: 20px;
+        width: 126px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+     
+}
+input[type='submit']:hover{
+    
+    transform: scale(1.05);
+}
+input[type='submit']:active{
+    translate: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}

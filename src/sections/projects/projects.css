@@ -1,0 +1,56 @@
+.procontainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+}
+.projexContainer{
+    display: flex;
+    justify-content: center;
+  
+    gap: 20px;
+   
+img{
+    border-radius: 20px;
+    
+    background-color: var(--project-card-bg);
+}
+a{
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+    &:hover{
+transform: scale(1.05);
+    }
+}
+.proimg{
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+}
+
+@media (max-width: 768px) {
+    .procontainer {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    .projexContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items vertically on smaller screens */
+    }
+
+    .proimg {
+        height: auto; /* Allow image height to adjust based on container size */
+        width: 100%; /* Ensure image takes full width of container */
+        max-width: 300px; /* Limit image width to maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .procontainer {
+        gap: 10px; /* Decrease gap between items for smaller screens */
+    }
+}
